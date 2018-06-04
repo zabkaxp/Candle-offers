@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+		<meta charset="utf-8">
+		<title>Candle summer discount</title>
+		<meta name="keyword" content="bestsellers, candles, yankee, candle, american candles, promotion, sales, best offer, best fragrances, beautiful fragrances">
+		<meta neme="description" content="Best promo offer for your favourite fragrnaces! Buy 1 large jars and get sheres and votives on the special price!">
+		<meta name="author" content="Marta Wojno">
+		<meta name="viewport" content="initial-scale=1.0, width=device-width">
+		<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700" rel="stylesheet">
+		<script
+		  src="https://code.jquery.com/jquery-3.3.1.min.js"
+		  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+		  crossorigin="anonymous"></script>
+		<link  href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<link rel="stylesheet" href="style.css">
+		<script src="js.js"></script>
+</head>
+
+
+<body onload="slide();">
+	<header id="mainInfo">
+		<h1>Welcome to our summer discount offer with the best candles!</h1>
+		<div id="slider">
+		</div>
+	</header>
+	<main>
+		<div id="description"><h1>Spend more, save more</h1></br>In our todays offer you can buy 1 large jar and get one fragrance sperer with a 50% discount! On the top of that for every purchased large jar get 2 votive candles for free!</br>Order today, as the promotion finishes on the 25th of June.
+		</div>
+		
+		<section id="offer">
+
+			<ul id="largeJars"><h3>Large jars</h3>
+				<li class="item"><img src="images/lrg_strw.png"><p><span class="fragrance">Strawberry cake</span>
+				</br>The aroma of buttery cake with fresh sliced strawberries and rich vanilla cream.</p><div class="howMany">Price: £20</br><input class="spinner" id="inp1" type="spinner" placeholder="Qty"><button type="submit" onclick="count(1)">Add</button></div></li>
+				<div style="clear:both"></div>
+				
+				<li class="item"><img src="images/peaches.png"><p><span class="fragrance">Peaches cocktail</span>
+				</br>The uplifting aroma of sweet fresh peaches with prosecco.</p><div class="howMany">Price: £20</br><input class="spinner" id="inp2" type="spinner" placeholder="Qty"><button type="submit" onclick="count(2)">Add</button></div></li>
+				<div style="clear:both"></div>
+				
+				<li class="item"><img src="images/lollip.png"><p><span class="fragrance">Sweet lollipops</span>
+				</br>Notes of cotton candy, vanilla and caramel with bergamot, orange and berries.</p><div class="howMany">Price: £20</br><input class="spinner" id="inp3" type="spinner" placeholder="Qty"><button type="submit" onclick="count(3)">Add</button></div></li>
+				<div style="clear:both"></div>
+				<div id="lgSum">Total: 0 large jars</div>
+			</ul>
+			<ul id="Spheres"><h3>Spheres</h3>
+				<li class="item"><img src="images/ocean.png"><p><span class="fragrance">Ocean in the sun</span>
+				</br>	This scent captures the atmosphere and attitude of summer by the ocean.</p><div class="howMany"></div></li>
+				<li class="item"><img src="images/yoghurt.png"><p><span class="fragrance">Delicious yoghurt</span></br>Delicious yoghurt with sweet sugar cane and vanilla extract.
+				</p><div class="howMany"></div></li>
+				<li class="item"><img src="images/jellies.png"><p><span class="fragrance">Sweetest jellies</span></br>Sweet cotton candy fragrance with fruity notes of strawberry and raspberry.
+				</p><div class="howMany"></div></li>
+			</ul>
+			<ul id="Votives"><h3>Votives</h3>
+				<li class="item"><img src="images/rainy.png"><p><span class="fragrance">Rainy evening</span>
+				</br>Sweet jasmine highlights this fresh blend of woodland fern and fresh flowers.</p><div class="howMany"></div></li>
+				<li class="item"><img src="images/roses.png"><p><span class="fragrance">Pink roses</span>
+				</br>A unique blend of Bulgarian rose, pomegranate, bergamot and patchouli.</p><div class="howMany"></div></li>
+				<li class="item"><img src="images/juice.png"><p><span class="fragrance">Orange juice</span>
+				</br>The uplifting aroma of sweet freshly peeled oranges.</p><div class="howMany"></div></li>
+			</ul>
+		</section>
+		<aside>Basket
+		</aside>
+	</main>
+	
+	<footer>
+		All rights reserved. Copyright &copy Marta Wojno
+	</footer>
+</body>
+</html>

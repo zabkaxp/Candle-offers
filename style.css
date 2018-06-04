@@ -1,0 +1,158 @@
+body{
+/* Background pattern from Toptal Subtle Patterns */
+	background-image:url("images/background.png");
+	font-family: 'Libre Baskerville', serif;
+	margin:0;
+	padding:0;
+}
+#mainInfo{
+	top:0;
+	left:0;
+	background-color:#d5bce5;
+	min-height:390px;
+	padding-top:5px;
+	text-align:center;
+	color:black;
+}
+main{
+	padding:30px;
+	display:grid;
+	grid-template-columns:3fr 1fr;
+	grid-gap:30px;	
+}
+
+#slider img{
+	width:100%;
+}
+#description{
+	grid-column: 1 / span 2;
+	box-sizing:border-box;
+	margin:0;
+	text-align:center;
+	letter-spacing:2px;
+	line-height:25px;
+	padding-bottom:30px;
+}
+#offer{
+	padding:0;
+	position:relative;
+	grid-column:1;
+	
+}
+#offer ul{
+	margin-top:0;
+	margin-bottom:30px;
+	padding-top:10px;
+	text-indent:40px;
+	padding-left:0;
+	list-style-type:none;
+	font-size:28px;
+	background-color:white;
+	border:0px;
+	border-radius:20px;
+	
+	}
+#offer>ul>li:hover{
+	background-color:#f7dcf6;}
+
+#offer>ul>li{
+	border-top:1px dashed #f7dcf6;
+	font-size:15px;
+	min-height:100px;
+	position:relative;
+	
+	}
+
+
+.item img{
+	padding-top:20px;
+	height:60px;
+	padding-left:40px;
+	display:block;
+	float:left;
+	
+	}
+
+.fragrance{
+		font-weight:bold;
+		letter-spacing:1px;
+		line-height:40px;
+	}
+#offer>ul>li p{
+	display:block;
+	float:left;	
+	padding-left:40px;
+		}
+
+input[type=spinner] {
+    width: 50px;
+	height:30px;
+    padding:2px;
+    margin: 0px;
+    box-sizing: border-box;
+	vertical-align:middle;
+	margin:3px;
+}
+
+.spinner{
+	width:100em;
+}
+button{
+	padding:2px;
+	margin:auto;
+	width: 40px;
+	height:30px;
+}
+.howMany{
+	line-height:30px;
+	text-indent:0;
+	text-align:center;
+	font-weight:bold;
+	box-sizing:border-box;
+	float:left;
+	border:none;
+	position:absolute;
+	width:150px;
+	height:100%;
+	top:0;
+	right:0;
+	padding:15px;
+	margin:0;
+	
+}
+aside{
+	margin-bottom:30px;
+	display:block;
+	min-height:100px;
+	grid-column:2;
+	background-color:white;
+	border-radius:20px;
+}
+
+#lgSum{
+	box-sizing: border-box;
+	text-align:right;
+	padding:10px;
+	text-indent:0;
+	font-size:18px;
+	position:absolute;
+	border:1px solid #000;
+	background-color:white;
+	position:relative;
+	min-height:20px;
+	vertical-align:middle;}
+
+footer{
+	position: fixed;
+	padding-top:4px;
+	padding-bottom:4px;
+	width:100%;
+	bottom:0;
+	left:0;
+	display:block;
+	background-color:#d5bce5;
+	min-height:10px;
+	text-align:center;
+	font-weight:600;
+	}
+	
