@@ -4,7 +4,6 @@ body{
 	font-family: 'Libre Baskerville', serif;
 	margin:0;
 	padding:0;
-	height:100vh;
 }
 #mainInfo{
 	top:0;
@@ -17,6 +16,7 @@ body{
 }
 main{
 	padding:30px;
+    padding-bottom: 10px;
 	display:grid;
 	grid-template-columns:3fr 1fr;
 	grid-gap:30px;	
@@ -51,22 +51,27 @@ main{
 	background-color:white;
 	border:0px;
 	border-radius:20px;
+    position: relative;
 	
 	}
-#offer>ul>li:hover{
-	background-color:#f7dcf6;}
+h3{
+    margin-top:16px;
+    margin-bottom: 20px;
+}
 
+#offer>ul>li:hover{
+	background-color:#f7dcf6;
+}
 #offer>ul>li{
 	border-top:1px dashed #f7dcf6;
 	font-size:15px;
-	min-height:100px;
+	min-height:80px;
 	position:relative;
-	
 	}
 
 
 .item img{
-	padding-top:20px;
+	padding-top:10px;
 	height:60px;
 	padding-left:40px;
 	display:block;
@@ -75,36 +80,38 @@ main{
 	}
 
 .fragrance{
-		font-weight:bold;
-		letter-spacing:1px;
-		line-height:40px;
+    font-weight:bold;
+    display:block;
+	left:0;
+    letter-spacing:1px;
+    line-height:30px;
+    padding-top:10px;
 	}
-#offer>ul>li p{
-	display:block;
-	float:left;	
-	padding-left:40px;
-		}
 
-input[type=spinner] {
+.description{
+	display:block;
+	left:0;
+    padding-left:60px;
+    padding-top:3px;
+    font-size:15px;
+}
+
+input{
     width: 50px;
 	height:30px;
-    padding:2px;
+
     margin: 0px;
     box-sizing: border-box;
 	vertical-align:middle;
 	margin:3px;
 }
 
-.spinner{
-	width:100em;
-}
 button{
-	padding:2px;
 	margin:auto;
 	width: 40px;
-	height:30px;
+	height:31px;
 }
-.howMany{
+.howMuch{
 	line-height:30px;
 	text-indent:0;
 	text-align:center;
@@ -117,43 +124,169 @@ button{
 	height:100%;
 	top:0;
 	right:0;
-	padding:15px;
+	
+    padding-top:5px;
 	margin:0;
 	
 }
 aside{
-	margin-bottom:30px;
+    position:sticky;
+    top:15px;
 	display:block;
-	min-height:100px;
+	height:220px;
 	grid-column:2;
 	background-color:white;
 	border-radius:20px;
+    
+}
+
+.bttns{
+    position:absolute;
+    right:25px;
+    top:20px;
+    
+}
+
+.promo{
+    position:absolute;
+    color:red;
+    font-size:11px;
+    right:10px;
+    top:36px;
 }
 
 #lgSum{
 	box-sizing: border-box;
 	text-align:right;
-	padding:10px;
+	padding:15px;
+    margin-right:10px;
 	text-indent:0;
 	font-size:18px;
 	position:absolute;
-	border:1px solid #000;
+	border-top:1px solid #f7dcf6;
 	background-color:white;
 	position:relative;
 	min-height:20px;
-	vertical-align:middle;}
+	vertical-align:middle;
+    border-bottom-right-radius:20px;
+    border-bottom-left-radius:20px;
+}
 
+
+#sphSum{
+	box-sizing: border-box;
+	text-align:right;
+	padding:15px;
+    margin-right:10px;
+	text-indent:0;
+	font-size:18px;
+	position:absolute;
+	border-top:1px solid #f7dcf6;
+	background-color:white;
+	position:relative;
+	min-height:20px;
+	vertical-align:middle;
+    border-bottom-right-radius:20px;
+    border-bottom-left-radius:20px;
+}
+
+#votSum{
+	box-sizing: border-box;
+	text-align:right;
+	padding:15px;
+    margin-right:10px;
+	text-indent:0;
+	font-size:18px;
+	position:absolute;
+	border-top:1px solid #f7dcf6;
+	background-color:white;
+	position:relative;
+	min-height:20px;
+	vertical-align:middle;
+    border-bottom-right-radius:20px;
+    border-bottom-left-radius:20px;
+}
 footer{
-	position: fixed;
-	padding-top:4px;
-	padding-bottom:4px;
+    
+	padding-top:17px;
+	padding-bottom:14px;
 	width:100%;
 	bottom:0;
 	left:0;
 	display:block;
-	background-color:#d5bce5;
-	min-height:10px;
+	background-color:#d5bce5;	
 	text-align:center;
 	font-weight:600;
 	}
-	
+
+#totalSum{
+    position:relative;
+    line-height:60px;
+    padding-left:60px;
+    text-align:center;
+    font-size:25px;
+    letter-spacing:2px;
+    font-weight:800;
+}
+#orderTotal{
+    position:relative;
+    line-height:60px;
+    padding-left:20px;
+    font-size:20px;
+    letter-spacing:2px;
+}
+
+#orderTotal:before {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top:5px;
+    height: 1px;
+    width: 280px;  
+    border-bottom:1px solid gray;
+}
+
+
+.totals{
+    padding-left:20px;
+    line-height:30px;
+}
+
+#totallargeJars{
+    position:absolute;
+    right:30px;
+}
+
+#totalspheres{
+    position:absolute;
+    right:30px;
+}
+
+#totalvotives{
+    position:absolute;
+    right:30px;
+}
+
+#totalVot:after{
+    border-bottom:2px solid black;
+}
+#val{
+    position:absolute;
+    right:28px;
+}
+
+.priceRight{
+    display:inline-block;
+    position:absolute;
+    right:40px;
+    top:30px;
+    font-size:24px;
+}
+
+.dealInfo{
+   
+    font-size:12px;
+    position:absolute;
+    right:20px;
+    top:70px;
+}
